@@ -17,3 +17,15 @@ class Recipe(models.Model):
     class Meta:
         managed = False
         db_table = 'recipe'
+
+
+class RecipeIngredient(models.Model):
+    recipe = models.ForeignKey(Recipe, models.DO_NOTHING)
+    id = models.BigIntegerField(primary_key=True)
+    name = models.CharField(max_length=20)
+    qnt = models.CharField(max_length=20)
+    type = models.CharField(max_length=5)
+
+    class Meta:
+        managed = False
+        db_table = 'recipe_ingredient'
