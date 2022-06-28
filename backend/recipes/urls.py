@@ -6,6 +6,6 @@ app_name = 'recipes'
 urlpatterns = [
     path('material/', views.material),
     path('<int:recipe_pk>/', views.recipe_detail_wish_recipe),
-    path('list/', views.list),
+    path('list/', views.recipe_list),
 ]
 
