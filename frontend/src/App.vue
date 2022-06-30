@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
-        <router-link to="/">Home</router-link>
+        <router-link to="/">Intro</router-link>
         <router-link v-if="login" to="/mypage">MyPage</router-link>
         <router-link v-if="login" to="/logout">Logout</router-link>
         <div v-else>

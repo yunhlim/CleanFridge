@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-
+    <h1>Intro</h1>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 
 
 export default {
-  name: 'HomeView',
+  name: 'IntroView',
   components: {
     
   }
