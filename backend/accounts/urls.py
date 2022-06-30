@@ -5,5 +5,6 @@ app_name = 'accounts'
 
 urlpatterns = [
     path('profile/<username>/', views.profile),
-    path('ingredients', views.ingredients),
+    path('ingredients/', views.ingredients),
+    path('<int:ingredient_pk>/', views.ingredient_add_delete),
 ]
