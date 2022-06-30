@@ -3,8 +3,9 @@ import VueRouter from 'vue-router'
 import IntroView from '../views/IntroView.vue'
 import SignupView from '../views/SignupView'
 import LoginView from '../views/LoginView'
-import LogoutView from '../views/LogoutView'
 import MyPageView from '../views/MyPageView.vue'
+import RecipeDetailView from '../views/RecipeDetailView.vue'
+import RecipeListView from '../views/RecipeDetailView.vue'
 
 Vue.use(VueRouter)
 
@@ -25,15 +26,20 @@ const routes = [
     component: LoginView
   },
   {
-    path: '/logout',
-    name: 'logout',
-    component: LogoutView
-  },
-  {
-    path: '/MyPage/',
+    path: '/MyPage',
     name: 'MyPage',
     component: MyPageView
   },
+  {
+    path: '/RecipeDetail',
+    name: 'RecipeDetail',
+    component: RecipeDetailView
+  },
+  {
+    path: '/RecipeListView',
+    name: 'RecipeListView',
+    component: RecipeListView
+  }
 ]
 
 const router = new VueRouter({
